@@ -44,10 +44,5 @@ Overall, the application leverages AWS S3 for storage, SQS for decoupled messagi
   - **Web-tier Instance:** A single instance (named "web-instance") running the Flask server (via Gunicorn) with a static Elastic IP.  
   - **Application-tier Instances:** A group of instances that can scale from 0 to 15 based on load, each processing one request at a time.
 
-- **VPC & Security Group:**  
-  - A VPC (or the default VPC) hosting all EC2 instances.  
-  - A security group allowing HTTP access on port 8000 (for the web server) and SSH on port 22 for administrative access.
-
 - **IAM Roles & Policies:**  
-  - An IAM role for the web-tier instance with policies granting access to S3, SQS, and read-only access to EC2.  
-  - Additional permissions may be set up for the application-tier instances as needed.
+  - An IAM role for the web-tier instance with policies granting access to S3, SQS, and read-only access to EC2.
