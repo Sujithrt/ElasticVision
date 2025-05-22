@@ -46,3 +46,7 @@ Overall, the application leverages AWS S3 for storage, SQS for decoupled messagi
 
 - **IAM Roles & Policies:**  
   - An IAM role for the web-tier instance with policies granting access to S3, SQS, and read-only access to EC2.
+
+## System Architecture
+![image](https://github.com/user-attachments/assets/d88bc73f-c109-42e1-9a47-9b38b1e300da)
+
